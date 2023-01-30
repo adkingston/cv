@@ -1,0 +1,96 @@
+\documentclass{adk_cv}
+\usepackage[margin=0.4in]{geometry}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{dashrule}
+\usepackage{tikz}
+
+\pagenumbering{}
+
+
+\definecolor{default}{HTML}{4c566a}
+
+
+
+\begin{document}
+
+\color{default}
+\noindent \titletext{Alexander Kingston}{Mathematician / Software Engineer}
+
+\noindent adkingston@gmail.com \hfill / \hfill 703.618.2227 \hfill / \hfill Mclean, Virginia \hfill / \hfill linkedin.com/in/alexanderkingston
+\noindent\rule{\textwidth}{1pt}
+
+\begingroup\hspace{-15pt}\endgroup
+\begin{minipage}[t]{\dimexpr.36\linewidth}
+    \begin{flushleft}
+    \section{Summary}
+    I am a \textit{pure mathematician} and \textit{software engineer} capable of conceptualizing complex data systems quickly and efficiently.
+    I am passionate about machine learning and artificial intelligence, and the impact that advanced systems can have on improving processes and peoples digital experiences.
+
+\section{Technical Skills}
+\subsection{Languages}
+Go, Python, JavaScript
+
+
+\subsection{Databases}
+DGraph, MongoDB, SQL (MariaDB, MySQL, Postgres), InfluxDB
+
+
+\subsection{Technologies}
+Docker, Kubernetes (K8S), Apache Kafka, RabbitMQ, GraphQL, REST, gRPC
+
+
+\subsection{Operating Systems}
+Linux (Ubuntu / Debian), Windows 10, Mac OS X
+
+\section{Interests}
+\subsection{Technological}
+Built a dedicated computer for artificial intelligence / machine learning research; implementing algorithms using Python (and occasionally experimenting with Lua or Julia) \\ 
+
+
+\subsection{Athletics}
+Martial arts, rowing, lifting, camping (designated lumberjack of the camping group), and hiking (aiming to hike Ben Lomond next year)
+
+\subsection{Artistic}
+Sketching, bonsai care, espresso / coffee brewing, fountain pen collecting and calligraphy, whisky connoisseur, grill master
+
+
+\section{Languages}
+\subsection{Fluent/Native}
+English, Spanish
+    \end{flushleft}
+\end{minipage}
+\hfill\begingroup\hspace{-5pt}\endgroup\hfill
+\begin{minipage}[t]{\dimexpr.62\linewidth}
+
+\begin{flushleft}
+\section{Education}
+\educationHeader{Master of Science in Data Science, Technology, \& Innovation}{University of Edinburgh, Scotland \hfill Est. 2023}
+
+\educationHeader{Master of Science in Mathematics with Distinction}{University of St.\ Andrews, Scotland \hfill 2018}
+
+\hspace{10pt}{\footnotesize Thesis: \textit{Fractal Symphonies: Zeta Functions \& Tube Formulae}}
+
+\educationHeader{Master of Arts (Hons.) in Mathematics}{University of St. Andrews, Scotland \hfill 2017}
+
+\hspace{10pt}{\footnotesize Thesis: \textit{On the Coordinate Functions of the Sierpinski-Knopp Space Filling Curve}}
+
+\section{Work Experience}
+\educationHeader{Securiport LLC.}{Software Engineer \hfill Oct. 2018 --- Present}
+Core team member responsible for developing the \textit{Intelligent Information Management System} --- 
+a proprietary system that provides border security officers with aggregated information, travel data, and 
+findings on persons of interest.
+\begin{itemize}[left=0pt]
+    \item Designed and managed data model for traveler and their information including documents, survey responses, travel history, and unstructured web data.
+    \item Designed and implemented IDAS (Intelligent Data Analysis System), which provides a framework for the development and deployment of sychronous and asynchronous data processing and enriching pipelines with a focus of ease and flexibility of development and deployment. This system allows almost anyone to create and implement new data processing pipelines, in particular, data scientists and data engineers, using the language most suitable for the task at each part of the pipeline.
+    \item Created and integrated safeguards to ensure that connection and transaction failures with the databases and APIs do not disrupt the end users session.
+    \item Developed proof-of-concept for the use of gRPC in our systems and convinced department leaders of the added utility gained in migrating existing back-end APIs from GraphQL and REST to gRPC.
+    \item Reconceputalized and repurposed the core system from border security to epidemic control in the span of three months to help ensure company survival during the Coronavirus Pandemic.
+    \item Assisted the system administrator in the migration from Docker Swarm to Kubernetes (K8S)
+    \item Mentored junior developers and new hires, introduced and taught our system, the tools we use, and how to develop efficiently and with production in mind.
+    \item Planned and executed the migration of our DGraph cluster from version 1.0.16 to 20.11.0, which included a complete overhaul of the schema management system, and a refactoring of the entire server-side code to manage the newly added support for one to one relations. Created scripts which acted as Kubernetes jobs to perform export and import functionality of data.
+\end{itemize}
+\end{flushleft}
+\end{minipage}
+%\end{minipadocument}
+\end{document}

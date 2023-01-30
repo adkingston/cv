@@ -1,0 +1,35 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{adk_cv}[2020/04/01 My CV template]
+\LoadClass[a4paper, 10pt]{article}
+
+% packages
+\RequirePackage[default]{raleway}
+\RequirePackage{titlesec}
+\RequirePackage{xcolor}\definecolor{cvblue}{rgb}{0.32, 0.68, 0.89}\titleformat{\section}         
+  {\bfseries\raggedright\color{cvblue}}  % title format
+  {}{0em}                 % prefix to section
+  {\hspace{-0.8em}}   
+
+
+\RequirePackage{relsize}\let\oldsection\section
+\renewcommand*{\section}[1]{
+  \oldsection{\larger[2] #1}
+}
+
+\titleformat{\subsection}         
+  {\large\bfseries} 
+  {}{0em}  
+  {}
+
+\RequirePackage{ifthen}\newcommand*{\work}[3]{
+  \subsection{#1}
+  \ifthenelse{\equal{#2}{}}{}{\textbf{#2}\\}
+  #3
+}
+
+\titlespacing*{\subsection}{0pt}{0.7\baselineskip}{0.4\baselineskip}
+\titlespacing*{\section}{0pt}{1.8\baselineskip}{0.4\baselineskip}
+\renewcommand{\baselinestretch}{1.15}
+
+
+
