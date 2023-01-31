@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{adk_cv}[2020/04/01 My CV template]
-\LoadClass[a4paper, 10pt]{article}
+\LoadClass[a4paper, 9pt]{article}
 
 % packages
 \RequirePackage[defaultfam,light,tabular,lining]{montserrat}
@@ -37,7 +37,7 @@
 }
 
 \titlespacing*{\subsection}{0pt}{0.7\baselineskip}{0.4\baselineskip}
-\titlespacing*{\section}{0pt}{1.8\baselineskip}{0.4\baselineskip}
+\titlespacing*{\section}{0pt}{1\baselineskip}{0.4\baselineskip}
 \renewcommand{\baselinestretch}{1}
 
 
